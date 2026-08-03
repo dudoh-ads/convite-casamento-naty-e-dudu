@@ -37,8 +37,8 @@ export const WaxSealEnvelope: React.FC<WaxSealEnvelopeProps> = ({ config, isOpen
         className="relative w-full max-w-md aspect-[3/4.6] max-h-[88vh] rounded-2xl shadow-2xl bg-dark-editorial border border-[#C6C6C8]/30 flex flex-col justify-between overflow-hidden text-center select-none"
       >
         {/* Silver vertical ribbon strip */}
-        <div className="absolute top-0 bottom-0 left-[28%] w-[5px] bg-silver-metallic opacity-90 shadow-md z-0" />
-        <div className="absolute top-0 bottom-0 left-[28.8%] w-[1px] bg-white opacity-80 z-0" />
+        <div className="absolute top-0 bottom-0 left-[88%] w-[5px] bg-silver-metallic opacity-90 shadow-md z-0" />
+        <div className="absolute top-0 bottom-0 left-[88.8%] w-[1px] bg-white opacity-80 z-0" />
 
         {/* Top Header - Couple Monogram / Names */}
         <div className="relative z-10 pt-10 px-8">
