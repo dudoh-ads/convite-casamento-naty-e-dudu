@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: './',
+    base: '/convite-casamento-naty-e-dudu/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
