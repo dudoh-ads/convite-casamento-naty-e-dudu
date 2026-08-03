@@ -164,7 +164,7 @@ export async function loadMessages(webhookUrl?: string): Promise<GuestMessage[]>
     return [
       {
         id: 'welcome',
-        author: 'Nayara & Gabriel',
+        author: 'Nathallia & Matheus',
         message: 'Sejam bem-vindos ao nosso convite virtual! Deixem uma mensagem com todo o carinho de vocês.',
         createdAt: new Date().toISOString(),
       },
