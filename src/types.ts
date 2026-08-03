@@ -21,6 +21,7 @@ export interface InvitationConfig {
   bgMusicUrl?: string;
   googleSheetsWebhookUrl?: string;
   confirmDeadlineText: string;
+  couplePhotoUrl?: string; // URL da foto do casal
 }
 
 export interface RSVP {

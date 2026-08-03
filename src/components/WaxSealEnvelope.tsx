@@ -34,8 +34,15 @@ export const WaxSealEnvelope: React.FC<WaxSealEnvelopeProps> = ({ config, isOpen
         animate={{ scale: 1, opacity: 1, y: 0 }}
         exit={{ scale: 1.05, opacity: 0 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        className="relative w-full max-w-md aspect-[3/4.6] max-h-[88vh] rounded-2xl shadow-2xl bg-dark-editorial border border-[#C6C6C8]/30 flex flex-col justify-between overflow-hidden text-center select-none"
+        className="relative w-full max-w-md aspect-[3/4.6] max-h-[88vh] rounded-2xl shadow-2xl border border-[#C6C6C8]/30 flex flex-col justify-between overflow-hidden text-center select-none"
+        style={{
+          backgroundImage: config.couplePhotoUrl ? `url('${config.couplePhotoUrl}')` : undefined,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
+        {/* Overlay for dark editorial background */}
+        <div className="absolute inset-0 bg-dark-editorial opacity-75 z-0" />
         {/* Silver vertical ribbon strip */}
         <div className="absolute top-0 bottom-0 left-[88%] w-[5px] bg-silver-metallic opacity-90 shadow-md z-0" />
         <div className="absolute top-0 bottom-0 left-[88.8%] w-[1px] bg-white opacity-80 z-0" />

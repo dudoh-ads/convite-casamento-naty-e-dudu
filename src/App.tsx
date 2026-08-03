@@ -3,6 +3,7 @@ import { Heart, CheckCircle2, Sparkles } from 'lucide-react';
 import { defaultInvitationConfig } from './defaultData';
 import { WaxSealEnvelope } from './components/WaxSealEnvelope';
 import { OrchidHeader } from './components/OrchidHeader';
+import { CouplePhotoSection } from './components/CouplePhotoSection';
 import { CountdownTimer } from './components/CountdownTimer';
 import { EventDetails } from './components/EventDetails';
 import { DressCodeSection } from './components/DressCodeSection';
@@ -55,6 +56,15 @@ export default function App() {
 
           {/* 1. Header with Orchids, Verse & Names */}
           <OrchidHeader config={config} />
+
+          {/* 1.5 Couple Photo Section */}
+          {config.couplePhotoUrl && (
+            <CouplePhotoSection
+              photoUrl={config.couplePhotoUrl}
+              brideName={config.brideName}
+              groomName={config.groomName}
+            />
+          )}
 
           {/* 2. Countdown Timer */}
           <CountdownTimer

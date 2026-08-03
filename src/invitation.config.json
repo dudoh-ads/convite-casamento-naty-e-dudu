@@ -13,12 +13,19 @@
   "dressCodeTitle": "Traje Passeio Completo",
   "dressCodeDescription": "Para nossa celebração, sugerimos traje passeio completo (esporte fino elegante). Venha pronto para comemorar e dançar conosco!",
   "forbiddenColorsText": "Pedimos a gentileza de evitar trajes nos tons marfim, branco, marsala, bordô e magenta.",
-  "forbiddenColorHexes": ["#FFFFFF", "#F8F7F4", "#7C2338", "#6B1124", "#A13B74"],
+  "forbiddenColorHexes": [
+    "#FFFFFF",
+    "#F8F7F4",
+    "#7C2338",
+    "#6B1124",
+    "#A13B74"
+  ],
   "pixKey": "21 990792613",
   "pixKeyType": "Celular",
   "pixReceiverName": "Nathallia Paiva",
   "bankName": "Banco Itaú",
   "bgMusicUrl": "",
   "confirmDeadlineText": "Por favor, confirme sua presença até 30/08/2026",
-  "googleSheetsWebhookUrl": "https://script.google.com/macros/s/AKfycbwAQ6DT7oMxX3x9-i1H5LEi50_zl38ii433aOI--n1Ow6p5cwd8PN4yVi7mxYPwQ8P5/exec"
+  "googleSheetsWebhookUrl": "https://script.google.com/macros/s/AKfycbwAQ6DT7oMxX3x9-i1H5LEi50_zl38ii433aOI--n1Ow6p5cwd8PN4yVi7mxYPwQ8P5/exec",
+  "couplePhotoUrl": "/assets/foto_casamento_naty_dudu.jpeg"
 }
