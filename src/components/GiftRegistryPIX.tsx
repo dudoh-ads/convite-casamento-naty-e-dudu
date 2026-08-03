@@ -97,7 +97,7 @@ export const GiftRegistryPIX: React.FC<GiftRegistryPIXProps> = ({ config }) => {
       {/* Virtual Gifts Suggestion Cards */}
       <div>
         <span className="micro-label text-center block mb-6 text-[#8A2E63]">
-          Cotas de Presente Simbólicas
+          Presentes Simbólicos
         </span>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

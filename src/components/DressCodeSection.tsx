@@ -35,10 +35,10 @@ export const DressCodeSection: React.FC<DressCodeSectionProps> = ({ config }) =>
             {config.forbiddenColorHexes.map((hex, index) => (
               <div key={index} className="flex flex-col items-center gap-1">
                 <div
-                  className="w-7 h-7 rounded-full border border-[#C6C6C8] shadow-xs relative flex items-center justify-center"
+                  className="w-7 h-7 rounded-full border border-[#000000] shadow-xs relative flex items-center justify-center"
                   style={{ backgroundColor: hex }}
                 >
-                  <span className="w-full h-[1px] bg-[#6B1124]/60 rotate-45 absolute" />
+                  <span className="w-full h-[1px] bg-[#000000]/60 rotate-45 absolute" />
                 </div>
               </div>
             ))}
