@@ -16,7 +16,7 @@ export const EventDetails: React.FC<EventDetailsProps> = ({ config, onOpenRSVP }
           Data &amp; Horário
         </span>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 my-3">
+        <div className="flex flex-col items-center justify-center gap-4 sm:gap-8 my-3">
           <div className="text-center">
             <span className="font-serif-display text-3xl sm:text-4xl italic text-[#6B1124] block tracking-wide font-normal">
               {config.eventDateText}
