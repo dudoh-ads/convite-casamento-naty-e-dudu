@@ -1,0 +1,6 @@
+{
+  "name": "Convite Virtual de Casamento Interativo",
+  "description": "Convite virtual de casamento interativo com animação de envelope e selo de cera, contador regressivo, confirmação de presença (RSVP), lista de presentes PIX e sincronização com Google Sheets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
