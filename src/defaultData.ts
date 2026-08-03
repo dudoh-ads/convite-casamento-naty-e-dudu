@@ -1,8 +1,15 @@
 import { InvitationConfig, VirtualGift } from './types';
 import invitationConfigData from './invitation.config.json';
+import couplePhotoUrl from '../assets/foto_casamento_naty_dudu.jpeg';
 
-export const defaultInvitationConfig: InvitationConfig = invitationConfigData as InvitationConfig;
+const invitationConfig = invitationConfigData as InvitationConfig;
 
+export const defaultInvitationConfig: InvitationConfig = {
+  ...invitationConfig,
+  couplePhotoUrl: invitationConfig.couplePhotoUrl?.includes('/assets/') || invitationConfig.couplePhotoUrl?.includes('assets/')
+    ? couplePhotoUrl
+    : invitationConfig.couplePhotoUrl || couplePhotoUrl,
+};
 
 export const defaultVirtualGifts: VirtualGift[] = [
   {

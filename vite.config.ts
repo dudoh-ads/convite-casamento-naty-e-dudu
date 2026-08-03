@@ -1,11 +1,16 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import {defineConfig} from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 
-export default defineConfig(() => {
+const isGitHubPages = process.env.GITHUB_ACTIONS === 'true' || process.env.GITHUB_PAGES === 'true';
+
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, process.cwd(), '');
+  const useGitHubPagesBase = isGitHubPages || env.GITHUB_ACTIONS === 'true' || env.GITHUB_PAGES === 'true';
+
   return {
-    base: '/convite-casamento-naty-e-dudu/',
+    base: useGitHubPagesBase ? '/convite-casamento-naty-e-dudu/' : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

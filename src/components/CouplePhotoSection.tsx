@@ -1,4 +1,5 @@
 import React from 'react';
+import { getAssetUrl } from '../utils/assets';
 
 interface CouplePhotoSectionProps {
   photoUrl: string;
@@ -20,7 +21,7 @@ export const CouplePhotoSection: React.FC<CouplePhotoSectionProps> = ({
             {/* Photo with subtle zoom on hover */}
             <div className="relative overflow-hidden aspect-[4/5] sm:aspect-[3/4]">
               <img
-                src={photoUrl}
+                src={getAssetUrl(photoUrl)}
                 alt={`${brideName} & ${groomName}`}
                 className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
               />
