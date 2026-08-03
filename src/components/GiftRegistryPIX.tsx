@@ -34,7 +34,7 @@ export const GiftRegistryPIX: React.FC<GiftRegistryPIXProps> = ({ config }) => {
         <span className="micro-label mb-3 block text-[#8A2E63]">
           Lista de Presentes &amp; Chave PIX
         </span>
-        <p className="font-serif-title text-base sm:text-lg italic text-[#4A4A4A] max-w-lg mx-auto leading-relaxed">
+        <p className="font-serif-title text-lg sm:text-xl italic text-[#4A4A4A] max-w-lg mx-auto leading-relaxed">
           "Sua presença é nosso maior presente! Caso deseje nos homenagear com uma lembrança ou contribuir para a nossa viagem de Lua de Mel, disponibilizamos nossa Chave PIX abaixo."
         </p>
       </div>
@@ -57,10 +57,10 @@ export const GiftRegistryPIX: React.FC<GiftRegistryPIXProps> = ({ config }) => {
             <span className="micro-label !text-[#C6C6C8] block">
               Chave PIX ({config.pixKeyType})
             </span>
-            <div className="font-mono text-sm sm:text-base font-bold bg-[#3B0813] px-3 py-2 rounded border border-[#C6C6C8]/40 inline-block text-[#F8F7F4] select-all">
+            <div className="font-mono text-base sm:text-lg font-bold bg-[#3B0813] px-3 py-2 rounded border border-[#C6C6C8]/40 inline-block text-[#F8F7F4] select-all">
               {config.pixKey}
             </div>
-            <p className="font-serif-title text-sm italic text-[#C6C6C8]">
+            <p className="font-serif-title text-base italic text-[#C6C6C8]">
               Favorecido: <strong className="font-semibold text-[#F8F7F4]">{config.pixReceiverName}</strong>
             </p>
             <p className="micro-label !text-[#C6C6C8]/80 !text-[9px]">

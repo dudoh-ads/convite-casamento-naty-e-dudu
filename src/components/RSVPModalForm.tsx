@@ -163,7 +163,7 @@ export const RSVPModalForm: React.FC<RSVPModalFormProps> = ({
           ) : (
             /* RSVP Form */
             <form onSubmit={handleSubmit} className="space-y-5">
-              <p className="font-serif-title text-base italic text-[#4A4A4A] text-center mb-2">
+              <p className="font-serif-title text-lg italic text-[#4A4A4A] text-center mb-2">
                 "{config.confirmDeadlineText}"
               </p>
 
@@ -212,7 +212,7 @@ export const RSVPModalForm: React.FC<RSVPModalFormProps> = ({
                   value={guestName}
                   onChange={(e) => setGuestName(e.target.value)}
                   placeholder="Ex: Helena & Gabriel Silva"
-                  className="w-full bg-transparent border-b border-[#6B1124]/30 py-2 font-serif-title text-base italic text-[#4A4A4A] focus:outline-none focus:border-[#6B1124] transition-colors"
+                  className="w-full bg-transparent border-b border-[#6B1124]/30 py-2 font-serif-title text-lg italic text-[#4A4A4A] focus:outline-none focus:border-[#6B1124] transition-colors"
                 />
               </div>
 
@@ -226,7 +226,7 @@ export const RSVPModalForm: React.FC<RSVPModalFormProps> = ({
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="(11) 99999-9999"
-                  className="w-full bg-transparent border-b border-[#6B1124]/30 py-2 font-serif-title text-base italic text-[#4A4A4A] focus:outline-none focus:border-[#6B1124] transition-colors"
+                  className="w-full bg-transparent border-b border-[#6B1124]/30 py-2 font-serif-title text-lg italic text-[#4A4A4A] focus:outline-none focus:border-[#6B1124] transition-colors"
                 />
               </div>
 
@@ -277,7 +277,7 @@ export const RSVPModalForm: React.FC<RSVPModalFormProps> = ({
                       value={companionNames}
                       onChange={(e) => setCompanionNames(e.target.value)}
                       placeholder="Ex: Pedro, Sofia"
-                      className="w-full bg-transparent border-b border-[#6B1124]/30 py-1.5 font-serif-title text-sm italic text-[#4A4A4A] focus:outline-none focus:border-[#6B1124]"
+                      className="w-full bg-transparent border-b border-[#6B1124]/30 py-1.5 font-serif-title text-base italic text-[#4A4A4A] focus:outline-none focus:border-[#6B1124]"
                     />
                   </div>
                 </div>
@@ -293,7 +293,7 @@ export const RSVPModalForm: React.FC<RSVPModalFormProps> = ({
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder="Ex: Sou vegetariano / Mal podemos esperar!"
-                  className="w-full bg-transparent border-b border-[#6B1124]/30 py-2 font-serif-title text-sm italic text-[#4A4A4A] focus:outline-none focus:border-[#6B1124] transition-colors"
+                  className="w-full bg-transparent border-b border-[#6B1124]/30 py-2 font-serif-title text-base italic text-[#4A4A4A] focus:outline-none focus:border-[#6B1124] transition-colors"
                 />
               </div>
 

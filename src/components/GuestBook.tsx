@@ -48,7 +48,7 @@ export const GuestBook: React.FC<GuestBookProps> = ({ webhookUrl }) => {
         <span className="micro-label mb-3 block text-[#8A2E63]">
           Mural de Recados
         </span>
-        <p className="font-serif-title text-base sm:text-lg italic text-[#4A4A4A]">
+        <p className="font-serif-title text-lg sm:text-xl italic text-[#4A4A4A]">
           Deixe uma mensagem de carinho para guardar para sempre no nosso coração.
         </p>
       </div>
@@ -63,7 +63,7 @@ export const GuestBook: React.FC<GuestBookProps> = ({ webhookUrl }) => {
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
             placeholder="Ex: Ana & Carlos Silva"
-            className="w-full bg-transparent border-b border-[#6B1124]/20 py-2 text-sm font-serif-title italic text-[#4A4A4A] focus:outline-none focus:border-[#6B1124] transition-colors"
+            className="w-full bg-transparent border-b border-[#6B1124]/20 py-2 text-base font-serif-title italic text-[#4A4A4A] focus:outline-none focus:border-[#6B1124] transition-colors"
           />
         </div>
 
@@ -75,7 +75,7 @@ export const GuestBook: React.FC<GuestBookProps> = ({ webhookUrl }) => {
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder="Escreva sua mensagem aos noivos..."
-            className="w-full bg-transparent border-b border-[#6B1124]/20 py-2 text-sm font-serif-title italic text-[#4A4A4A] focus:outline-none focus:border-[#6B1124] transition-colors"
+            className="w-full bg-transparent border-b border-[#6B1124]/20 py-2 text-base font-serif-title italic text-[#4A4A4A] focus:outline-none focus:border-[#6B1124] transition-colors"
           />
         </div>
 
@@ -114,7 +114,7 @@ export const GuestBook: React.FC<GuestBookProps> = ({ webhookUrl }) => {
                   {new Date(msg.createdAt).toLocaleDateString('pt-BR')}
                 </span>
               </div>
-              <p className="font-serif-title text-base italic text-[#4A4A4A] leading-relaxed">
+              <p className="font-serif-title text-lg italic text-[#4A4A4A] leading-relaxed">
                 "{msg.message}"
               </p>
             </div>

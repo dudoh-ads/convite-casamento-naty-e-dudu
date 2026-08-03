@@ -18,7 +18,7 @@ export const EventDetails: React.FC<EventDetailsProps> = ({ config, onOpenRSVP }
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 my-3">
           <div className="text-center">
-            <span className="font-serif-display text-2xl sm:text-3xl italic text-[#6B1124] block tracking-wide font-normal">
+            <span className="font-serif-display text-3xl sm:text-4xl italic text-[#6B1124] block tracking-wide font-normal">
               {config.eventDateText}
             </span>
           </div>
@@ -27,7 +27,7 @@ export const EventDetails: React.FC<EventDetailsProps> = ({ config, onOpenRSVP }
 
           <div className="text-center flex items-center justify-center gap-2">
             <Clock className="w-4 h-4 text-[#8A2E63]" />
-            <span className="font-serif-title text-xl sm:text-2xl italic text-[#5A0F20] block">
+            <span className="font-serif-title text-2xl sm:text-3xl italic text-[#5A0F20] block">
               {config.eventTimeText}
             </span>
           </div>
@@ -40,11 +40,11 @@ export const EventDetails: React.FC<EventDetailsProps> = ({ config, onOpenRSVP }
           Local da Cerimônia &amp; Recepção
         </span>
 
-        <h4 className="font-serif-display text-2xl sm:text-3xl italic text-[#6B1124] my-2">
+        <h4 className="font-serif-display text-3xl sm:text-4xl italic text-[#6B1124] my-2">
           {config.eventLocationName}
         </h4>
 
-        <p className="font-serif-title text-base sm:text-lg italic text-[#4A4A4A] max-w-md mx-auto mb-6 leading-relaxed">
+        <p className="font-serif-title text-lg sm:text-xl italic text-[#4A4A4A] max-w-md mx-auto mb-6 leading-relaxed">
           {config.eventAddress}
         </p>
 

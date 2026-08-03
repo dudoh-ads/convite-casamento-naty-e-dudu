@@ -76,17 +76,17 @@ export const CountdownTimer: React.FC<CountdownTimerProps> = ({
 
         {timeLeft.isPast ? (
           <div className="py-4">
-            <p className="font-serif-display text-2xl sm:text-3xl text-[#6B1124] italic font-normal">
+            <p className="font-serif-display text-3xl sm:text-4xl text-[#6B1124] italic font-normal">
               🎉 O grande dia chegou!
             </p>
-            <p className="font-serif-title text-base text-[#4A4A4A] italic mt-2">
+            <p className="font-serif-title text-lg text-[#4A4A4A] italic mt-2">
               Hoje celebramos o amor de {brideName} &amp; {groomName}!
             </p>
           </div>
         ) : (
           <div className="flex items-center justify-center gap-1 sm:gap-6 my-4 px-1 max-w-full overflow-hidden">
             <div className="text-center min-w-[44px] sm:min-w-[64px]">
-              <span className="text-2xl sm:text-4xl block font-serif-display italic font-semibold text-[#6B1124] leading-none">
+              <span className="text-3xl sm:text-5xl block font-serif-display italic font-semibold text-[#6B1124] leading-none">
                 {String(timeLeft.days).padStart(2, '0')}
               </span>
               <span className="micro-label !text-[8px] sm:!text-[10px] mt-1 block text-[#8A2E63]">
@@ -96,8 +96,8 @@ export const CountdownTimer: React.FC<CountdownTimerProps> = ({
 
             <span className="text-lg sm:text-2xl font-serif-display italic text-[#8A2E63] select-none -mt-3">:</span>
 
-            <div className="text-center min-w-[40px] sm:min-w-[64px]">
-              <span className="text-2xl sm:text-4xl block font-serif-display italic font-semibold text-[#6B1124] leading-none">
+            <div className="text-center min-w-[44px] sm:min-w-[64px]">
+              <span className="text-3xl sm:text-5xl block font-serif-display italic font-semibold text-[#6B1124] leading-none">
                 {String(timeLeft.hours).padStart(2, '0')}
               </span>
               <span className="micro-label !text-[8px] sm:!text-[10px] mt-1 block text-[#8A2E63]">
@@ -107,8 +107,8 @@ export const CountdownTimer: React.FC<CountdownTimerProps> = ({
 
             <span className="text-lg sm:text-2xl font-serif-display italic text-[#8A2E63] select-none -mt-3">:</span>
 
-            <div className="text-center min-w-[40px] sm:min-w-[64px]">
-              <span className="text-2xl sm:text-4xl block font-serif-display italic font-semibold text-[#6B1124] leading-none">
+            <div className="text-center min-w-[44px] sm:min-w-[64px]">
+              <span className="text-3xl sm:text-5xl block font-serif-display italic font-semibold text-[#6B1124] leading-none">
                 {String(timeLeft.minutes).padStart(2, '0')}
               </span>
               <span className="micro-label !text-[8px] sm:!text-[10px] mt-1 block text-[#8A2E63]">
@@ -118,8 +118,8 @@ export const CountdownTimer: React.FC<CountdownTimerProps> = ({
 
             <span className="text-lg sm:text-2xl font-serif-display italic text-[#8A2E63] select-none -mt-3">:</span>
 
-            <div className="text-center min-w-[40px] sm:min-w-[64px]">
-              <span className="text-2xl sm:text-4xl block font-serif-display italic font-semibold text-[#6B1124] leading-none">
+            <div className="text-center min-w-[44px] sm:min-w-[64px]">
+              <span className="text-3xl sm:text-5xl block font-serif-display italic font-semibold text-[#6B1124] leading-none">
                 {String(timeLeft.seconds).padStart(2, '0')}
               </span>
               <span className="micro-label !text-[8px] sm:!text-[10px] mt-1 block text-[#8A2E63]">
@@ -129,7 +129,7 @@ export const CountdownTimer: React.FC<CountdownTimerProps> = ({
           </div>
         )}
 
-        <p className="text-xs sm:text-sm mt-4 leading-relaxed text-[#4A4A4A] font-serif-title italic max-w-md mx-auto">
+        <p className="text-sm sm:text-base mt-4 leading-relaxed text-[#4A4A4A] font-serif-title italic max-w-md mx-auto">
           O tempo que nos separa do momento mais especial de nossas vidas.
         </p>
 
